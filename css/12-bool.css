@@ -1,0 +1,57 @@
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* /reset */
+
+/* regole debug */
+.debug .container {
+  border:  1px solid black;
+  min-height: 200px;
+}
+.debug [class*='col-'] {
+  height: 200px;
+  border: 1px solid black;
+}
+
+/* framework */
+p {
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  background-color: #ffc0cb;
+}
+.container::after {
+  content: '';
+  clear: both;
+  display:block;
+}
+
+[class*='col-'] {
+  float: left;
+  line-height: 200px;
+}
+
+.col-1 {
+  width: calc( ( 100% / 12 ) * 1);
+}
+
+.col-2 {
+  width: calc((100% / 1))
+}
+
+.col-3 {
+  width: calc((100% / 12) * 8)
+}
+
+.col-4 {
+  width: calc((100% / 12 ) * 2)
+}
+.col-5 {
+  width: calc((100% / 12) * 1)
+}
