@@ -8,24 +8,18 @@
 
 /* regole debug */
 .debug .container {
-  border:  1px solid black;
   min-height: 200px;
 }
 .debug [class*='col-'] {
-  height: 200px;
   border: 1px solid black;
 }
 
+.debug [class*='col-nested'] {
+  border: 1px solid whi;
+}
 /* framework */
-p {
-  text-align: center;
-}
 
-.container {
-  margin: 0 auto;
-  max-width: 1170px;
-  background-color: #ffc0cb;
-}
+
 .container::after {
   content: '';
   clear: both;
@@ -34,21 +28,33 @@ p {
 
 [class*='col-'] {
   float: left;
-  line-height: 200px;
 }
 
 .col-1 {
   width: calc( ( 100% / 12 ) * 1);
 }
 
+.col-12 {
+  width: calc((100% / 1));
+}
+
+.col-8 {
+  width: calc((100% / 12) * 8);
+}
+
 .col-2 {
-  width: calc((100% / 1))
+  width: calc((100% / 12 ) * 2);
+}
+.col-6 {
+  width: calc((100% / 12 ) * 6);
 }
 
-.col-3 {
-  width: calc((100% / 12) * 8)
+.col-2-nested {
+  width: calc( (100% / 12 ) * 2);
 }
-
-.col-4 {
-  width: calc((100% / 12 ) * 2)
+.col-8-nested {
+  width: calc((100% / 12) * 8);
+}
+.col-6-nested {
+  width: calc((100% / 12 ) * 6);
 }
