@@ -15,8 +15,3 @@ p {
   max-width: 1170px;
   background-color: #ffc0cb;
 }
-
-.col-6 .col-2-nested, .col-6 .col-8-nested, .col-6 .col-6-nested  {
-  background-color: #f07f80;
-  border: 1px solid white;
-}

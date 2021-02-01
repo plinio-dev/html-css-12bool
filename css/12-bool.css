@@ -14,8 +14,9 @@
   border: 1px solid black;
 }
 
-.debug [class*='col-nested'] {
-  border: 1px solid whi;
+.debug [class*='nested'] {
+  border: 1px solid white;
+  background-color: #f07f80;
 }
 /* framework */
 
