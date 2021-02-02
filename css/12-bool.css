@@ -18,9 +18,8 @@
   border: 1px solid white;
   background-color: #f07f80;
 }
+
 /* framework */
-
-
 .container::after {
   content: '';
   clear: both;
@@ -47,15 +46,5 @@
   width: calc((100% / 12 ) * 2);
 }
 .col-6 {
-  width: calc((100% / 12 ) * 6);
-}
-
-.col-2-nested {
-  width: calc( (100% / 12 ) * 2);
-}
-.col-8-nested {
-  width: calc((100% / 12) * 8);
-}
-.col-6-nested {
   width: calc((100% / 12 ) * 6);
 }
